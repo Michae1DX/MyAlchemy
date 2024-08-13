@@ -1,5 +1,5 @@
 /**
-  * @version 4
+  * @version 5
   */
  package org.org_1.longesturlever;
 
@@ -27,7 +27,7 @@
    Map<String,FunctionVariableWrapper> ingressSignature = new HashMap<>( 5 );;
 
    public testing_the_longest_url() {
-     super(10874, "13780.850", "Testing The Longest URL", "Add a description of Testing The Longest URL", 0, "", "".split(","), "{\"symphonyId\":0,\"id\":10874,\"name\":\"Testing The Longest URL\",\"description\":\"Add a description of Testing The Longest URL\",\"userId\":20,\"userConfidence\":0,\"organizationId\":1,\"organizationConfidence\":0,\"status\":1,\"reviewFlag\":0,\"createDate\":\"Aug 8, 2024, 8:05:22 PM\",\"modifyDate\":\"Aug 13, 2024, 2:07:12 PM\",\"version\":4,\"lockUserId\":0,\"level\":1,\"pre\":\"\",\"post\":\"\",\"deviceTagNames\":\"\",\"changeCount\":0,\"uniqueContributors\":0,\"stepCount\":0,\"testUserConfidence\":0.0,\"errorHandler\":\"\",\"classificationId\":0,\"synchronizationId\":0,\"storageVersion\":2,\"alchemyId\":850,\"alchemySeed\":13780,\"referenceSuiteID\":0,\"signature\":\"null\",\"acls\":[],\"changed\":false}");
+     super(10874, "13780.850", "Testing The Longest URL", "Add a description of Testing The Longest URL", 0, "", "".split(","), "{\"symphonyId\":0,\"id\":10874,\"name\":\"Testing The Longest URL\",\"description\":\"Add a description of Testing The Longest URL\",\"userId\":20,\"userConfidence\":0,\"organizationId\":1,\"organizationConfidence\":0,\"status\":1,\"reviewFlag\":0,\"createDate\":\"Aug 8, 2024, 8:05:22 PM\",\"modifyDate\":\"Aug 13, 2024, 2:14:19 PM\",\"version\":5,\"lockUserId\":0,\"level\":1,\"pre\":\"\",\"post\":\"\",\"deviceTagNames\":\"\",\"changeCount\":0,\"uniqueContributors\":0,\"stepCount\":0,\"testUserConfidence\":0.0,\"errorHandler\":\"\",\"classificationId\":0,\"synchronizationId\":0,\"storageVersion\":2,\"alchemyId\":850,\"alchemySeed\":13780,\"referenceSuiteID\":0,\"signature\":\"null\",\"acls\":[],\"changed\":false}");
    }
 
    private void sleep( long sleepTime ) {
@@ -208,40 +208,6 @@
         vM.addVariable( new VariableWrapper( "ingressSignature", ingressSignature, "" ) );
       }
       eventList.add( aM.executeAction( "Click_v7", "", 1, vM.generateVariables(), vM.generateVariableDefinitions(), "{\"templateImplId\":189,\"checkpointId\":1,\"alchemyId\":2325,\"alchemySeed\":14025,\"pauseBefore\":0,\"waitFor\":5000,\"pauseAfter\":0,\"variableList\":[{\"value\":\"14025.2312\",\"inputId\":1,\"templateId\":0,\"inputName\":\"targetLocator\",\"inputDescription\":\"The name of the locator retrieved from the elements\",\"inputTypeId\":5,\"inputRequired\":1,\"status\":1,\"changed\":false},{\"value\":\"Default\",\"inputId\":59,\"templateId\":0,\"inputName\":\"method\",\"inputDescription\":\"The method used to click.  If omitted, default is used\",\"inputData\":\"Default,No Wait,Simple,Double,Right\",\"inputTypeId\":10,\"inputRequired\":0,\"status\":1,\"changed\":false}],\"functionVariables\":[],\"status\":1,\"actionId\":1,\"parentId\":0,\"endpointId\":1,\"templateId\":0,\"tversion\":7,\"tstyleId\":1,\"tstatus\":1,\"verifiedBy\":0,\"onFailure\":1,\"breakpoint\":false,\"invertResult\":false,\"actionDisplay\":\"Click on {var:targetLocator}\",\"changed\":false}", stepStack.peek(), (t4) -> {  return null; }, false, 0, 5000, 0, 1 ) );
-      
-      vM.clear();
-
-      ingressSignature.clear();
-      
-
-      vM.addVariable( createVariable( "Method", 10, true, "URL", dS, contextMap, webDriver ) );
-      vM.addVariable( createVariable( "Exact Match", 4, true, "false", dS, contextMap, webDriver ) );
-      vM.addVariable( createVariable( "Identifier", 1, true, "llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch.co.uk", dS, contextMap, webDriver ) );
-      vM.addVariable( createVariable( "Case Sensitive", 4, true, "false", dS, contextMap, webDriver ) );
-      
-
-      if ( !ingressSignature.isEmpty() ) {
-	vM.addVariable( new VariableWrapper( "__dS", dS, "" ) );
-        vM.addVariable( new VariableWrapper( "ingressSignature", ingressSignature, "" ) );
-      }
-      eventList.add( aM.executeAction( "Change_Window_v1", "", 1, vM.generateVariables(), vM.generateVariableDefinitions(), "{\"templateImplId\":86,\"checkpointId\":1,\"alchemyId\":2300,\"alchemySeed\":14025,\"pauseBefore\":0,\"waitFor\":5000,\"pauseAfter\":0,\"variableList\":[{\"value\":\"URL\",\"inputId\":0,\"templateId\":0,\"inputName\":\"Method\",\"inputDescription\":\"The method used to identify the window \",\"inputData\":\"Title,URL,Handle,Index\",\"inputTypeId\":10,\"inputRequired\":1,\"status\":1,\"changed\":false},{\"value\":\"false\",\"inputId\":0,\"templateId\":0,\"inputName\":\"Exact Match\",\"inputDescription\":\"True indicates that we must match the entire Identifier.  False allows for a partial match\",\"inputData\":\"\",\"inputTypeId\":4,\"inputRequired\":1,\"status\":1,\"changed\":false},{\"value\":\"llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch.co.uk\",\"inputId\":0,\"templateId\":0,\"inputName\":\"Identifier\",\"inputDescription\":\"The value used to find the window using the Method\",\"inputData\":\"\",\"inputTypeId\":1,\"inputRequired\":1,\"status\":1,\"changed\":false},{\"value\":\"false\",\"inputId\":0,\"templateId\":0,\"inputName\":\"Case Sensitive\",\"inputDescription\":\"True if the Identifier is must match case, false otherwise\",\"inputData\":\"\",\"inputTypeId\":4,\"inputRequired\":1,\"status\":1,\"changed\":false}],\"functionVariables\":[],\"status\":1,\"actionId\":39,\"parentId\":0,\"endpointId\":0,\"templateId\":0,\"tversion\":1,\"tstyleId\":1,\"tstatus\":1,\"verifiedBy\":0,\"onFailure\":1,\"breakpoint\":false,\"invertResult\":false,\"actionDisplay\":\"Change to the window identified by {var:Identifier} using {var:Method}\",\"changed\":false}", stepStack.peek(), (t4) -> {  return null; }, false, 0, 5000, 0, 1 ) );
-      
-      vM.clear();
-
-      ingressSignature.clear();
-      
-
-      vM.addVariable( createVariable( "Method", 10, true, "URL", dS, contextMap, webDriver ) );
-      vM.addVariable( createVariable( "Exact Match", 4, true, "false", dS, contextMap, webDriver ) );
-      vM.addVariable( createVariable( "Identifier", 1, true, "llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch.co.uk", dS, contextMap, webDriver ) );
-      vM.addVariable( createVariable( "Case Sensitive", 4, true, "false", dS, contextMap, webDriver ) );
-      
-
-      if ( !ingressSignature.isEmpty() ) {
-	vM.addVariable( new VariableWrapper( "__dS", dS, "" ) );
-        vM.addVariable( new VariableWrapper( "ingressSignature", ingressSignature, "" ) );
-      }
-      eventList.add( aM.executeAction( "Change_Window_v1", "", 1, vM.generateVariables(), vM.generateVariableDefinitions(), "{\"templateImplId\":86,\"checkpointId\":1,\"alchemyId\":2347,\"alchemySeed\":14025,\"pauseBefore\":0,\"waitFor\":5000,\"pauseAfter\":0,\"variableList\":[{\"value\":\"URL\",\"inputId\":0,\"templateId\":0,\"inputName\":\"Method\",\"inputDescription\":\"The method used to identify the window \",\"inputData\":\"Title,URL,Handle,Index\",\"inputTypeId\":10,\"inputRequired\":1,\"status\":1,\"changed\":false},{\"value\":\"false\",\"inputId\":0,\"templateId\":0,\"inputName\":\"Exact Match\",\"inputDescription\":\"True indicates that we must match the entire Identifier.  False allows for a partial match\",\"inputData\":\"\",\"inputTypeId\":4,\"inputRequired\":1,\"status\":1,\"changed\":false},{\"value\":\"llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch.co.uk\",\"inputId\":0,\"templateId\":0,\"inputName\":\"Identifier\",\"inputDescription\":\"The value used to find the window using the Method\",\"inputData\":\"\",\"inputTypeId\":1,\"inputRequired\":1,\"status\":1,\"changed\":false},{\"value\":\"false\",\"inputId\":0,\"templateId\":0,\"inputName\":\"Case Sensitive\",\"inputDescription\":\"True if the Identifier is must match case, false otherwise\",\"inputData\":\"\",\"inputTypeId\":4,\"inputRequired\":1,\"status\":1,\"changed\":false}],\"functionVariables\":[],\"status\":1,\"actionId\":39,\"parentId\":0,\"endpointId\":1,\"templateId\":0,\"tversion\":1,\"tstyleId\":1,\"tstatus\":1,\"verifiedBy\":0,\"onFailure\":1,\"breakpoint\":false,\"invertResult\":false,\"actionDisplay\":\"Change to the window identified by {var:Identifier} using {var:Method}\",\"changed\":false}", stepStack.peek(), (t4) -> {  return null; }, false, 0, 5000, 0, 1 ) );
       
 
       

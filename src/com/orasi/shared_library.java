@@ -1,5 +1,5 @@
 /**
- * @version 6
+ * @version 8
  *
  */
  package com.orasi;
@@ -114,93 +114,6 @@
 if ( contextName != null ) {
   contextMap.put( contextName, webDriver.getCurrentUrl() );
 }
- if ( variableMap != null ) {
-   variableMap.clear();
- }
-}
-
- 
- public static void Change_Window_v1( int executionId, int stepIdentifier, int testExecutionId, WebDriver webDriver, Map<String,Object> variableMap, Map<String,Object> contextMap, String contextName, Stack<String> callStack, Stack<Integer> stepStack )
- {
- 
-   String Method = (String) variableMap.get( "Method" );
- 
-   Boolean Exact_Match = Boolean.parseBoolean( variableMap.get( "Exact Match" ) + "" );
- 
-   String Identifier = (String) variableMap.get( "Identifier" );
- 
-   Boolean Case_Sensitive = Boolean.parseBoolean( variableMap.get( "Case Sensitive" ) + "" );
- 
-
- if ( Identifier == null ) {
-      throw new IllegalArgumentException( "Identifier must be specified" );
-    }
-    String originalWindow = webDriver.getWindowHandle();
-    boolean windowLocated = false;
-
-    if (!Case_Sensitive) {
-      Identifier = Identifier.toLowerCase();
-    }
-
-    switch (Method) {
-      case "Handle":
-        try {
-          webDriver.switchTo().window(Identifier);
-          windowLocated = true;
-        } catch (NoSuchWindowException e) {
-          throw new IllegalArgumentException("Could not find a window using [" + Identifier + "]");
-        }
-      break;
-      case "Index":
-        try {
-          int windowIndex = Integer.parseInt(Identifier);
-          if (webDriver.getWindowHandles().size() <= windowIndex) {
-            throw new IllegalArgumentException("There is no window at index [" + windowIndex + "]");
-          }
-          webDriver.switchTo().window(webDriver.getWindowHandles().toArray()[windowIndex] + "");
-          windowLocated = true;
-        } catch (NoSuchWindowException e) {
-          throw new IllegalArgumentException("Could not find a window using [" + Identifier + "]");
-        } catch (IllegalArgumentException e) {
-          throw e;
-        } catch (Exception e) {
-
-      }
-      break;
-      
-      default:
-        if (!Case_Sensitive) {
-          Identifier = Identifier.toLowerCase();
-        }
-        String useValue = null;
-        for (String t : webDriver.getWindowHandles()) {
-          if (Method.equals("Title")) {
-            useValue = webDriver.switchTo().window(t).getTitle();
-          } else if (Method.equals("URL")) {
-            useValue = webDriver.switchTo().window(t).getCurrentUrl();
-          }
-
-          if (useValue != null) {
-            if (!Case_Sensitive) {
-              useValue = useValue.toLowerCase();
-            }
-
-            if (Exact_Match) {
-              if (Identifier.equals(useValue)) {
-                windowLocated = true;
-                break;
-              }
-            } else {
-              if (useValue.contains(Identifier)) {
-                windowLocated = true;
-                break;
-              }
-            }
-
-          }
-        }
-        break;
-    }
  if ( variableMap != null ) {
    variableMap.clear();
  }
