@@ -61,6 +61,18 @@ bC.add( new ByFactory( ByXPath.class, "//TABLE/TBODY[1]/TR[1]/TD[1]/FONT[1]/P[1]
 objectMap.put( "13780.881", bC );
 
 
+bC = new ByFactoryCollection("A", "14025.2312");
+bC.add( new ByFactory( ByXPath.class, "//TABLE[@width='85%']/TBODY[1]/TR[1]/TD[1]/FONT[1]/CENTER[1]/A[1]", "TableRule[AttributeRule]", "14025.2314" ) );
+bC.add( new ByFactory( ByXPath.class, "//*[@width='85%']/TBODY[1]/TR[1]/TD[1]/FONT[1]/CENTER[1]/A[1]", "TableRule[AttributeRule]", "14025.2316" ) );
+bC.add( new ByFactory( ByXPath.class, "//DIV[@class='o-grid o-grid--xsmall-full o-grid--small-full o-grid--medium-full']/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FONT[1]/CENTER[1]/A[1]", "TableRule[ParentRule[AttributeRule]]", "14025.2318" ) );
+bC.add( new ByFactory( ByXPath.class, "//*[@class='o-grid o-grid--xsmall-full o-grid--small-full o-grid--medium-full']/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FONT[1]/CENTER[1]/A[1]", "TableRule[ParentRule[AttributeRule]]", "14025.2320" ) );
+bC.add( new ByFactory( ByXPath.class, "//TABLE[./TBODY]/TBODY[1]/TR[1]/TD[1]/FONT[1]/CENTER[1]/A[1]", "TableRule[ChildRule[TagRule]]", "14025.2322" ) );
+bC.add( new ByFactory( ByXPath.class, "//TABLE/TBODY[1]/TR[1]/TD[1]/FONT[1]/CENTER[1]/A[1]", "TableRule[TagRule]", "14025.2324" ) );
+
+
+objectMap.put( "14025.2312", bC );
+
+
 
 
   }
