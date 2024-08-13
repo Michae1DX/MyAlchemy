@@ -1,5 +1,5 @@
 /**
- * @version 8
+ * @version 107
  */
   
 package com.orasi;
@@ -214,7 +214,7 @@ public class SuiteExecutionWrapper {
 
       SuiteExecutionWrapper.instance().addOptions( new com.orasi.integration.html.HTMLSerializer().getOptions() );
       SuiteExecutionWrapper.instance().addOptions( new com.orasi.integration.console.ExecutionConsole().getOptions() );
-      SuiteExecutionWrapper.instance().addOptions( new com.orasi.integration.cloud.ExecutionCloud().getOptions() );
+      SuiteExecutionWrapper.instance().addOptions( new com.orasi.integration.guiconsole.GUIExecutionConsole().getOptions() );
       
 
       CommandLineParser cP = new DefaultParser();
@@ -225,7 +225,7 @@ public class SuiteExecutionWrapper {
       }
 
       // Default Environment Properties 
-      DataManager.instance().addDefaultEnvironmentProperty( "url", DataManager.instance().replaceValues( "https://llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch.co.uk/" ) + "" );
+      DataManager.instance().addDefaultEnvironmentProperty( "url", DataManager.instance().replaceValues( "https://alchemydemo01.wpenginepowered.com/" ) + "" );
 
 
 
@@ -256,30 +256,62 @@ public class SuiteExecutionWrapper {
 
       if ( cli.hasOption( "h" ) ) {
         HelpFormatter formatter = new HelpFormatter();
-        formatter.printHelp("java -jar LongestURLEver", SuiteExecutionWrapper.instance().getOptions() );
+        formatter.printHelp("java -jar Buy_Bicycles", SuiteExecutionWrapper.instance().getOptions() );
         System.exit( 0 );
       }
 
       if ( cli.hasOption( "q" ) ) {
-        System.out.println( "LongestURLEver (Suite): 13780.841" ); 
-        System.out.println( "Testing The Longest URL (Test): 13780.850" );
+        System.out.println( "Buy Bicycles (Suite): 1764.1920" ); 
+        
+        System.out.println( "Purchase Any Bike Pattern Match (Test): 8885.945" );
+        System.out.println( "Purchase Various Products (Test): 11812.1383" );
         
         
         
-	System.out.println( "LongestURLEver cloud router (Router): 13780.844" );
-	System.out.println( "Chrome (Execution Target): 13780.845" );
-	System.out.println( "Firefox (Execution Target): 13780.846" );
+        
+        
+	System.out.println( "For114 (Router): 13745.1478" );
+	System.out.println( "chrome (Execution Target): 13745.1479" );
+	System.out.println( "firefox (Execution Target): 13745.1480" );
+	System.out.println( "MicrosoftEdge (Execution Target): 13745.1481" );
 	
-        System.out.println( "llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch.co.uk (Site): 13780.852" );
-        System.out.println( "Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch Home Page (Page): 13780.856" );
-        System.out.println( "default (Page): 13780.875" );
-        System.out.println( "Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch Say the Name (Page): 13780.877" );
+        System.out.println( "Old Bike Shop 3 (Site): 1557.2272" );
+        System.out.println( "The Bike Shop  The Ride Of A Lifetime (Page): 1557.2275" );
+        System.out.println( "default (Page): 1557.2292" );
+        System.out.println( "Bicycles  The Bike Shop (Page): 1557.2294" );
+        System.out.println( "Kryo X26 MTB  Model K  The Bike Shop (Page): 1557.2373" );
+        System.out.println( "Cart  The Bike Shop (Page): 1557.2493" );
+        System.out.println( "Checkout  The Bike Shop (Page): 1557.2545" );
+        System.out.println( "Old Bike Shop 1 (Site): 5625.435" );
+        System.out.println( "The Bike Shop  The Ride Of A Lifetime (Page): 5625.438" );
+        System.out.println( "default (Page): 5625.455" );
+        System.out.println( "Accessories  The Bike Shop (Page): 6663.2546" );
+        System.out.println( "Bike Shop (Site): 1923.235" );
+        System.out.println( "Checkout  The Bike Shop (Page): 1923.237" );
+        System.out.println( "Bicycles  The Bike Shop (Page): 1923.262" );
+        System.out.println( "default (Page): 1926.1686" );
+        System.out.println( "The Bike Shop  The Ride Of A Lifetime (Page): 1926.1688" );
+        System.out.println( "Accessories  The Bike Shop (Page): 1926.1716" );
+        System.out.println( "About Us  The Bike Shop (Page): 1926.1731" );
+        System.out.println( "Contact  The Bike Shop (Page): 1926.1746" );
+        System.out.println( "My Account  The Bike Shop (Page): 1926.1761" );
+        System.out.println( "Bicycle Gloves Blue  The Bike Shop (Page): 11812.1435" );
+        System.out.println( "Bicycle Helmet Red  The Bike Shop (Page): 11812.1508" );
+        System.out.println( "Kryo X26  Model Y  The Bike Shop (Page): 11812.1596" );
+        System.out.println( "Cart  The Bike Shop (Page): 11812.1636" );
+        System.out.println( "Old Bike Shop (Site): 1764.1924" );
+        System.out.println( "The Bike Shop  The Ride Of A Lifetime (Page): 1764.1927" );
+        System.out.println( "default (Page): 1764.1940" );
+        System.out.println( "Bicycles  The Bike Shop (Page): 1764.1942" );
+        System.out.println( "Kryo X26 MTB  Model X  The Bike Shop (Page): 1764.1957" );
+        System.out.println( "Cart  The Bike Shop (Page): 1764.2013" );
+        System.out.println( "Checkout  The Bike Shop (Page): 1764.2030" );
         
         
-        System.out.println( "HTML Generator (Integration): 13780.847" );
+        System.out.println( "HTML Generator (Integration): 9406.4024" );
         
-        System.out.println( "Alchemy Execution Console (Integration): 13780.848" );
-        System.out.println( "Alchemy Cloud Execution (Integration): 13780.842" );
+        System.out.println( "Alchemy Execution Console (Integration): 9406.4026" );
+        System.out.println( "Alchemy GUI Execution Console (Integration): 9406.4025" );
         
 	
         System.exit( 0 );
@@ -295,7 +327,7 @@ public class SuiteExecutionWrapper {
       if ( cli.hasOption( "a" ) ) {
         SuiteExecutionWrapper.instance().setName(cli.getOptionValue( "a" ));
       } else {
-        SuiteExecutionWrapper.instance().setName("LongestURLEver");
+        SuiteExecutionWrapper.instance().setName("Buy Bicycles");
       }
       if ( cli.hasOption( "u" ) ) {
         SuiteExecutionWrapper.instance().setUserName(cli.getOptionValue( "u" ));
@@ -305,17 +337,25 @@ public class SuiteExecutionWrapper {
       if ( cli.hasOption( "d" ) ) {
         SuiteExecutionWrapper.instance().setDescription(cli.getOptionValue( "d" ));
       } else {
-        SuiteExecutionWrapper.instance().setDescription("No description was added for LongestURLEver");
+        SuiteExecutionWrapper.instance().setDescription("No description was added for Buy Bicycles");
       }
 
       //
       // Configure the test level information
       //
       List<String> testList = new ArrayList(5);
-      if ( hasValue( "it", "13780.850" ) ) {
+      
+      if ( hasValue( "it", "8885.945" ) ) {
         if ( 0 == 0 || ( 0 == 1 && cli.hasOption( "rd" ) ) || ( 0 == 2 && cli.hasOption( "rq" ) ) ) {
-          TestManager.instance().registerTest( new org.org_1.longesturlever.testing_the_longest_url() );
-          testList.add("Testing The Longest URL");
+          TestManager.instance().registerTest( new org.org_1.buy_bicycles.purchase_any_bike_pattern_match() );
+          testList.add("Purchase Any Bike Pattern Match");
+        }
+      }
+      
+      if ( hasValue( "it", "11812.1383" ) ) {
+        if ( 0 == 0 || ( 0 == 1 && cli.hasOption( "rd" ) ) || ( 0 == 2 && cli.hasOption( "rq" ) ) ) {
+          TestManager.instance().registerTest( new org.org_1.buy_bicycles.purchase_various_products() );
+          testList.add("Purchase Various Products");
         }
       }
       
@@ -332,13 +372,13 @@ public class SuiteExecutionWrapper {
       //
       Router r;
       /*
-      Routers from LongestURLEver cloud router Execution Package
-      Add a description of LongestURLEver cloud router Execution Package
+      Routers from For114
+      Add a description of For114
       */
-      if ( hasValue( "ir", "13780.844" ) ) { 
-        r = new Router( 8, "LongestURLEver cloud router", "13780.844" ,"{\"name\":\"LongestURLEver cloud router\",\"description\":\"Add a description of LongestURLEver cloud router\",\"alchemyId\":844,\"alchemySeed\":13780,\"organizationId\":0,\"changed\":false,\"routerId\":8,\"status\":0,\"userId\":0,\"propertyList\":[{\"name\":\"URL\",\"value\":\"#{alchemy.cloud.url}\"}]}" );
+      if ( hasValue( "ir", "13745.1478" ) ) { 
+        r = new Router( 1, "For114", "13745.1478" ,"{\"name\":\"For114\",\"description\":\"For114\",\"alchemyId\":1478,\"alchemySeed\":13745,\"organizationId\":0,\"changed\":false,\"routerId\":1,\"status\":0,\"userId\":0,\"propertyList\":[{\"name\":\"URL\",\"value\":\"http://localhost:4444/wd/hub\"}]}" );
       
-        r.addProperty( "URL", DataManager.instance().replaceValues( "#{alchemy.cloud.url}" ) + "" );
+        r.addProperty( "URL", DataManager.instance().replaceValues( "http://localhost:4444/wd/hub" ) + "" );
         SuiteExecutionWrapper.instance().routerList.add(r);
       }
       
@@ -349,17 +389,25 @@ public class SuiteExecutionWrapper {
       List<ExecutionTarget> targetList = new ArrayList<>(10);
       ExecutionTarget eT;
       /*
-      Targets from LongestURLEver cloud router Execution Package
-      Add a description of LongestURLEver cloud router Execution Package
+      Targets from For114
+      Add a description of For114
       */
-      if ( hasValue( "ie", "13780.845" ) ) {
-        eT = new ExecutionTarget( "Chrome", "13780.845", "13780.844", 2 ,"{\"name\":\"Chrome\",\"description\":\"Add a description of Chrome\",\"alchemyId\":845,\"alchemySeed\":13780,\"organizationId\":0,\"changed\":false,\"maximumAvailable\":2,\"executionRouterID\":{\"alchemyId\":844,\"alchemySeed\":13780},\"propertyList\":[{\"name\":\"browserName\",\"value\":\"chrome\"}],\"status\":0,\"userId\":0,\"referenceSuiteID\":0}" );
+      if ( hasValue( "ie", "13745.1479" ) ) {
+        eT = new ExecutionTarget( "chrome", "13745.1479", "13745.1478", 1 ,"{\"name\":\"chrome\",\"description\":\"chrome\",\"alchemyId\":1479,\"alchemySeed\":13745,\"organizationId\":0,\"changed\":false,\"maximumAvailable\":1,\"executionRouterID\":{\"alchemyId\":1478,\"alchemySeed\":13745},\"propertyList\":[{\"name\":\"browserName\",\"value\":\"chrome\"},{\"name\":\"platformName\",\"value\":\"ANY\"}],\"status\":0,\"userId\":0,\"referenceSuiteID\":0}" );
         eT.addProperty( "browserName", DataManager.instance().replaceValues( "chrome" ) + "" );
+        eT.addProperty( "platformName", DataManager.instance().replaceValues( "ANY" ) + "" );
         targetList.add(eT);
       }
-      if ( hasValue( "ie", "13780.846" ) ) {
-        eT = new ExecutionTarget( "Firefox", "13780.846", "13780.844", 2 ,"{\"name\":\"Firefox\",\"description\":\"Add a description of Firefox\",\"alchemyId\":846,\"alchemySeed\":13780,\"organizationId\":0,\"changed\":false,\"maximumAvailable\":2,\"executionRouterID\":{\"alchemyId\":844,\"alchemySeed\":13780},\"propertyList\":[{\"name\":\"browserName\",\"value\":\"firefox\"}],\"status\":0,\"userId\":0,\"referenceSuiteID\":0}" );
+      if ( hasValue( "ie", "13745.1480" ) ) {
+        eT = new ExecutionTarget( "firefox", "13745.1480", "13745.1478", 0 ,"{\"name\":\"firefox\",\"description\":\"firefox\",\"alchemyId\":1480,\"alchemySeed\":13745,\"organizationId\":0,\"changed\":false,\"maximumAvailable\":0,\"executionRouterID\":{\"alchemyId\":1478,\"alchemySeed\":13745},\"propertyList\":[{\"name\":\"browserName\",\"value\":\"firefox\"},{\"name\":\"platformName\",\"value\":\"ANY\"}],\"status\":0,\"userId\":0,\"referenceSuiteID\":0}" );
         eT.addProperty( "browserName", DataManager.instance().replaceValues( "firefox" ) + "" );
+        eT.addProperty( "platformName", DataManager.instance().replaceValues( "ANY" ) + "" );
+        targetList.add(eT);
+      }
+      if ( hasValue( "ie", "13745.1481" ) ) {
+        eT = new ExecutionTarget( "MicrosoftEdge", "13745.1481", "13745.1478", 0 ,"{\"name\":\"MicrosoftEdge\",\"description\":\"MicrosoftEdge\",\"alchemyId\":1481,\"alchemySeed\":13745,\"organizationId\":0,\"changed\":false,\"maximumAvailable\":0,\"executionRouterID\":{\"alchemyId\":1478,\"alchemySeed\":13745},\"propertyList\":[{\"name\":\"browserName\",\"value\":\"MicrosoftEdge\"},{\"name\":\"platformName\",\"value\":\"ANY\"}],\"status\":0,\"userId\":0,\"referenceSuiteID\":0}" );
+        eT.addProperty( "browserName", DataManager.instance().replaceValues( "MicrosoftEdge" ) + "" );
+        eT.addProperty( "platformName", DataManager.instance().replaceValues( "ANY" ) + "" );
         targetList.add(eT);
       }
       
@@ -394,14 +442,11 @@ public class SuiteExecutionWrapper {
       //
       Integration cI = null;
       
-      if ( hasValue( "iw", "13780.847" ) ) { 
+      if ( hasValue( "iw", "9406.4024" ) ) { 
         cI = new com.orasi.integration.html.HTMLSerializer();
         log.warn( "Enabling Integration: " + cI.getTitle() );
         cI.setProperty( "outputFolder", SuiteExecutionWrapper.instance().getOption( cI.getKey(), "outputFolder", DataManager.instance().replaceValues( "." ) + "" ) );
         cI.setProperty( "launchUi", SuiteExecutionWrapper.instance().getOption( cI.getKey(), "launchUi", DataManager.instance().replaceValues( "false" ) + "" ) );
-        cI.setProperty( "suiteTemplate", SuiteExecutionWrapper.instance().getOption( cI.getKey(), "suiteTemplate", DataManager.instance().replaceValues( "" ) + "" ) );
-        cI.setProperty( "testTemplate", SuiteExecutionWrapper.instance().getOption( cI.getKey(), "testTemplate", DataManager.instance().replaceValues( "" ) + "" ) );
-        cI.setProperty( "sourceTemplate", SuiteExecutionWrapper.instance().getOption( cI.getKey(), "sourceTemplate", DataManager.instance().replaceValues( "" ) + "" ) );
       
         cI.initialize();
         cI.getHandlers().forEach((t) -> {
@@ -411,7 +456,7 @@ public class SuiteExecutionWrapper {
       
       
       
-      if ( hasValue( "iw", "13780.848" ) ) { 
+      if ( hasValue( "iw", "9406.4026" ) ) { 
         cI = new com.orasi.integration.console.ExecutionConsole();
         log.warn( "Enabling Integration: " + cI.getTitle() );
         cI.setProperty( "color", SuiteExecutionWrapper.instance().getOption( cI.getKey(), "color", DataManager.instance().replaceValues( "false" ) + "" ) );
@@ -422,17 +467,10 @@ public class SuiteExecutionWrapper {
         });
       }
       
-      if ( hasValue( "iw", "13780.842" ) ) { 
-        cI = new com.orasi.integration.cloud.ExecutionCloud();
+      if ( hasValue( "iw", "9406.4025" ) ) { 
+        cI = new com.orasi.integration.guiconsole.GUIExecutionConsole();
         log.warn( "Enabling Integration: " + cI.getTitle() );
-        cI.setProperty( "cloudUrl", SuiteExecutionWrapper.instance().getOption( cI.getKey(), "cloudUrl", DataManager.instance().replaceValues( "https://alchemytesting.cloud" ) + "" ) );
-        cI.setProperty( "apiKey", SuiteExecutionWrapper.instance().getOption( cI.getKey(), "apiKey", DataManager.instance().replaceValues( "66fc5969-47ed-4097-9c93-0a5778aba6c4" ) + "" ) );
-        cI.setProperty( "secretKey", SuiteExecutionWrapper.instance().getOption( cI.getKey(), "secretKey", DataManager.instance().replaceValues( "9dcbdf7c-c556-4c87-8316-f8883e7c921f" ) + "" ) );
-        cI.setProperty( "launchUI", SuiteExecutionWrapper.instance().getOption( cI.getKey(), "launchUI", DataManager.instance().replaceValues( "true" ) + "" ) );
-        cI.setProperty( "gridInactivityTimeout", SuiteExecutionWrapper.instance().getOption( cI.getKey(), "gridInactivityTimeout", DataManager.instance().replaceValues( "60" ) + "" ) );
-        cI.setProperty( "nodeInactivityTimeout", SuiteExecutionWrapper.instance().getOption( cI.getKey(), "nodeInactivityTimeout", DataManager.instance().replaceValues( "30" ) + "" ) );
-        cI.setProperty( "nodeInactivityStartupDelay", SuiteExecutionWrapper.instance().getOption( cI.getKey(), "nodeInactivityStartupDelay", DataManager.instance().replaceValues( "30" ) + "" ) );
-        cI.setProperty( "gridId", SuiteExecutionWrapper.instance().getOption( cI.getKey(), "gridId", DataManager.instance().replaceValues( "" ) + "" ) );
+        cI.setProperty( "port", SuiteExecutionWrapper.instance().getOption( cI.getKey(), "port", DataManager.instance().replaceValues( "8086" ) + "" ) );
       
         cI.initialize();
         cI.getHandlers().forEach((t) -> {
@@ -520,7 +558,7 @@ public class SuiteExecutionWrapper {
       suitePayload.setName(name);
       suitePayload.setDescription(description);
       suitePayload.setUserName(userName);
-      suitePayload.setSuiteDetail(  "{\"id\":3972,\"name\":\"LongestURLEver\",\"description\":\"No description was added for LongestURLEver\",\"userId\":20,\"userConfidence\":0,\"organizationId\":1,\"organizationConfidence\":0,\"status\":1,\"endpointId\":1,\"endpointStyleId\":1,\"targetId\":4127,\"targetConfigurationId\":0,\"targetVersionId\":0,\"reviewFlag\":0,\"importTests\":0,\"importFunctions\":0,\"importSites\":0,\"importTargets\":0,\"importData\":0,\"shareCount\":0,\"conductorList\":[{\"reviewFlag\":0,\"id\":3129,\"name\":\"LongestURLEver cloud router Execution Package\",\"description\":\"Add a description of LongestURLEver cloud router Execution Package\",\"alchemyId\":843,\"alchemySeed\":13780,\"organizationId\":1,\"userId\":20,\"version\":0,\"targetDetail\":\"[{\\\"name\\\": \\\"Chrome\\\", \\\"status\\\": 0, \\\"userId\\\": 0, \\\"changed\\\": false, \\\"alchemyId\\\": 845, \\\"alchemySeed\\\": 13780, \\\"description\\\": \\\"Add a description of Chrome\\\", \\\"propertyList\\\": [{\\\"name\\\": \\\"browserName\\\", \\\"value\\\": \\\"chrome\\\"}], \\\"organizationId\\\": 0, \\\"maximumAvailable\\\": 2, \\\"referenceSuiteID\\\": 0, \\\"executionRouterID\\\": {\\\"alchemyId\\\": 844, \\\"alchemySeed\\\": 13780}}, {\\\"name\\\": \\\"Firefox\\\", \\\"status\\\": 0, \\\"userId\\\": 0, \\\"changed\\\": false, \\\"alchemyId\\\": 846, \\\"alchemySeed\\\": 13780, \\\"description\\\": \\\"Add a description of Firefox\\\", \\\"propertyList\\\": [{\\\"name\\\": \\\"browserName\\\", \\\"value\\\": \\\"firefox\\\"}], \\\"organizationId\\\": 0, \\\"maximumAvailable\\\": 2, \\\"referenceSuiteID\\\": 0, \\\"executionRouterID\\\": {\\\"alchemyId\\\": 844, \\\"alchemySeed\\\": 13780}}]\",\"routerDetail\":\"[{\\\"name\\\": \\\"LongestURLEver cloud router\\\", \\\"status\\\": 0, \\\"userId\\\": 0, \\\"changed\\\": false, \\\"routerId\\\": 8, \\\"alchemyId\\\": 844, \\\"alchemySeed\\\": 13780, \\\"description\\\": \\\"Add a description of LongestURLEver cloud router\\\", \\\"propertyList\\\": [{\\\"name\\\": \\\"URL\\\", \\\"value\\\": \\\"#{alchemy.cloud.url}\\\"}], \\\"organizationId\\\": 0}]\",\"status\":1,\"lockUserId\":0,\"changed\":false,\"createDate\":\"Aug 8, 2024, 8:05:22 PM\",\"modifyDate\":\"Aug 8, 2024, 8:05:22 PM\",\"targetList\":[{\"name\":\"Chrome\",\"description\":\"Add a description of Chrome\",\"alchemyId\":845,\"alchemySeed\":13780,\"organizationId\":0,\"changed\":false,\"maximumAvailable\":2,\"executionRouterID\":{\"alchemyId\":844,\"alchemySeed\":13780},\"propertyList\":[{\"name\":\"browserName\",\"value\":\"chrome\"}],\"status\":0,\"userId\":0,\"referenceSuiteID\":0},{\"name\":\"Firefox\",\"description\":\"Add a description of Firefox\",\"alchemyId\":846,\"alchemySeed\":13780,\"organizationId\":0,\"changed\":false,\"maximumAvailable\":2,\"executionRouterID\":{\"alchemyId\":844,\"alchemySeed\":13780},\"propertyList\":[{\"name\":\"browserName\",\"value\":\"firefox\"}],\"status\":0,\"userId\":0,\"referenceSuiteID\":0}],\"routerList\":[{\"name\":\"LongestURLEver cloud router\",\"description\":\"Add a description of LongestURLEver cloud router\",\"alchemyId\":844,\"alchemySeed\":13780,\"organizationId\":0,\"changed\":false,\"routerId\":8,\"status\":0,\"userId\":0,\"propertyList\":[{\"name\":\"URL\",\"value\":\"#{alchemy.cloud.url}\"}]}],\"acls\":[{\"contextId\":3129,\"componentId\":2,\"componentName\":\"LongestURLEver cloud router Execution Package\",\"id\":2595,\"toUserId\":18,\"toOrgId\":0,\"writeFlag\":0,\"deleteFlag\":0,\"publicFlag\":0,\"publishedFlag\":0,\"userId\":20,\"status\":1}]}],\"version\":8,\"lockUserId\":0,\"testDisplay\":0,\"alchemyId\":841,\"alchemySeed\":13780,\"referenceSuiteID\":0,\"changed\":false}" );
+      suitePayload.setSuiteDetail(  "{\"id\":2635,\"name\":\"Buy Bicycles\",\"description\":\"No description was added for Buy Bicycles\",\"userId\":20,\"userConfidence\":0,\"organizationId\":1,\"organizationConfidence\":0,\"status\":1,\"endpointId\":1,\"endpointStyleId\":1,\"targetId\":2781,\"targetConfigurationId\":0,\"targetVersionId\":0,\"reviewFlag\":0,\"importTests\":0,\"importFunctions\":0,\"importSites\":0,\"importTargets\":0,\"importData\":0,\"shareCount\":0,\"conductorList\":[{\"reviewFlag\":0,\"id\":3118,\"name\":\"For114\",\"description\":\"Add a description of For114\",\"alchemyId\":1477,\"alchemySeed\":13745,\"organizationId\":1,\"userId\":20,\"version\":0,\"targetDetail\":\"[{\\\"name\\\": \\\"chrome\\\", \\\"status\\\": 0, \\\"userId\\\": 0, \\\"changed\\\": false, \\\"alchemyId\\\": 1479, \\\"alchemySeed\\\": 13745, \\\"description\\\": \\\"chrome\\\", \\\"propertyList\\\": [{\\\"name\\\": \\\"browserName\\\", \\\"value\\\": \\\"chrome\\\"}, {\\\"name\\\": \\\"platformName\\\", \\\"value\\\": \\\"ANY\\\"}], \\\"organizationId\\\": 0, \\\"maximumAvailable\\\": 1, \\\"referenceSuiteID\\\": 0, \\\"executionRouterID\\\": {\\\"alchemyId\\\": 1478, \\\"alchemySeed\\\": 13745}}, {\\\"name\\\": \\\"firefox\\\", \\\"status\\\": 0, \\\"userId\\\": 0, \\\"changed\\\": false, \\\"alchemyId\\\": 1480, \\\"alchemySeed\\\": 13745, \\\"description\\\": \\\"firefox\\\", \\\"propertyList\\\": [{\\\"name\\\": \\\"browserName\\\", \\\"value\\\": \\\"firefox\\\"}, {\\\"name\\\": \\\"platformName\\\", \\\"value\\\": \\\"ANY\\\"}], \\\"organizationId\\\": 0, \\\"maximumAvailable\\\": 0, \\\"referenceSuiteID\\\": 0, \\\"executionRouterID\\\": {\\\"alchemyId\\\": 1478, \\\"alchemySeed\\\": 13745}}, {\\\"name\\\": \\\"MicrosoftEdge\\\", \\\"status\\\": 0, \\\"userId\\\": 0, \\\"changed\\\": false, \\\"alchemyId\\\": 1481, \\\"alchemySeed\\\": 13745, \\\"description\\\": \\\"MicrosoftEdge\\\", \\\"propertyList\\\": [{\\\"name\\\": \\\"browserName\\\", \\\"value\\\": \\\"MicrosoftEdge\\\"}, {\\\"name\\\": \\\"platformName\\\", \\\"value\\\": \\\"ANY\\\"}], \\\"organizationId\\\": 0, \\\"maximumAvailable\\\": 0, \\\"referenceSuiteID\\\": 0, \\\"executionRouterID\\\": {\\\"alchemyId\\\": 1478, \\\"alchemySeed\\\": 13745}}]\",\"routerDetail\":\"[{\\\"name\\\": \\\"For114\\\", \\\"status\\\": 0, \\\"userId\\\": 0, \\\"changed\\\": false, \\\"routerId\\\": 1, \\\"alchemyId\\\": 1478, \\\"alchemySeed\\\": 13745, \\\"description\\\": \\\"For114\\\", \\\"propertyList\\\": [{\\\"name\\\": \\\"URL\\\", \\\"value\\\": \\\"http://localhost:4444/wd/hub\\\"}], \\\"organizationId\\\": 0}]\",\"status\":1,\"lockUserId\":0,\"changed\":false,\"createDate\":\"Aug 7, 2024, 10:42:20 PM\",\"modifyDate\":\"Aug 7, 2024, 10:42:20 PM\",\"targetList\":[{\"name\":\"chrome\",\"description\":\"chrome\",\"alchemyId\":1479,\"alchemySeed\":13745,\"organizationId\":0,\"changed\":false,\"maximumAvailable\":1,\"executionRouterID\":{\"alchemyId\":1478,\"alchemySeed\":13745},\"propertyList\":[{\"name\":\"browserName\",\"value\":\"chrome\"},{\"name\":\"platformName\",\"value\":\"ANY\"}],\"status\":0,\"userId\":0,\"referenceSuiteID\":0},{\"name\":\"firefox\",\"description\":\"firefox\",\"alchemyId\":1480,\"alchemySeed\":13745,\"organizationId\":0,\"changed\":false,\"maximumAvailable\":0,\"executionRouterID\":{\"alchemyId\":1478,\"alchemySeed\":13745},\"propertyList\":[{\"name\":\"browserName\",\"value\":\"firefox\"},{\"name\":\"platformName\",\"value\":\"ANY\"}],\"status\":0,\"userId\":0,\"referenceSuiteID\":0},{\"name\":\"MicrosoftEdge\",\"description\":\"MicrosoftEdge\",\"alchemyId\":1481,\"alchemySeed\":13745,\"organizationId\":0,\"changed\":false,\"maximumAvailable\":0,\"executionRouterID\":{\"alchemyId\":1478,\"alchemySeed\":13745},\"propertyList\":[{\"name\":\"browserName\",\"value\":\"MicrosoftEdge\"},{\"name\":\"platformName\",\"value\":\"ANY\"}],\"status\":0,\"userId\":0,\"referenceSuiteID\":0}],\"routerList\":[{\"name\":\"For114\",\"description\":\"For114\",\"alchemyId\":1478,\"alchemySeed\":13745,\"organizationId\":0,\"changed\":false,\"routerId\":1,\"status\":0,\"userId\":0,\"propertyList\":[{\"name\":\"URL\",\"value\":\"http://localhost:4444/wd/hub\"}]}],\"acls\":[]}],\"version\":107,\"lockUserId\":0,\"testDisplay\":0,\"alchemyId\":1920,\"alchemySeed\":1764,\"referenceSuiteID\":0,\"changed\":false}" );
       suitePayload.setTestList(testList);
       suitePayload.setTargetList(targetList);
       suitePayload.setTotalTests(totalTasks);
